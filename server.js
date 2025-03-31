@@ -21,6 +21,8 @@ app.use(cors({
 app.use("/api/auth", authRoutes);
 app.use("/api/events", eventRoutes);
 app.use("/api/bookings", bookingRoutes);
-
+app.get("/api/events", (req, res) => {
+    res.json({ message: "Events fetched successfully!" });
+});
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
