@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
 });  
 app.use(express.json());
 app.use(cors({ 
-    origin: ["http://localhost:5173", "https://clever-gingersnap-8c45ec.netlify.app/"],
+    origin: ["http://localhost:5173", "https://radiant-pegasus-245097.netlify.app/"],
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE"],
  }));
