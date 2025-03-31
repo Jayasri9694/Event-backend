@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
 });  
 app.use(express.json());
 app.use(cors({ 
-    origin: ["http://localhost:5173", "https://stalwart-boba-ec5dda.netlify.app"],
+    origin: ["http://localhost:5173", "https://enchanting-snickerdoodle-1f69dd.netlify.app/"],
     credentials: true,
  }));
 app.use("/api/auth", authRoutes);
